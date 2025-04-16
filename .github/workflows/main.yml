@@ -1,0 +1,9 @@
+name: Our workflow
+on: push
+jobs: 
+  cache:
+  runs-on: ubuntu-latest
+  step:
+    - uses: actions/chckout@v3
+    - run npm ci
+    
